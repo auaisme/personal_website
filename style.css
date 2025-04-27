@@ -1,0 +1,16 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+  
+#gameCanvas {
+    display: block;
+    margin: 0 auto;
+}
+
+.hover-zoom {
+    transition: transform 0.3s ease;
+}
+
+    .hover-zoom:hover {
+        transform: scale(1.05);
+    }
