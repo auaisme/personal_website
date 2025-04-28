@@ -125,7 +125,7 @@ function updateGame() {
     obs.src = 'game-assets/spikes.png';
     obs.style.position = 'absolute';
     obs.style.bottom = '0px';
-    obs.style.width = '30px';
+    obs.style.width = '50px';
     obs.style.height = '30px';
   
     // Start just outside the visible game area on the right
@@ -141,8 +141,8 @@ function isColliding(a, b) {
   const bRect = b.getBoundingClientRect();
 
   return (
-    aRect.left < bRect.right &&
-    aRect.right > bRect.left &&
+    aRect.left < bRect.right - 30 &&
+    aRect.right > bRect.left + 30 &&
     aRect.top < bRect.bottom &&
     aRect.bottom > bRect.top
   );
